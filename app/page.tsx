@@ -32,7 +32,7 @@ export default function Home() {
       <EachBlok
         left={
           <div className=" space-y-4">
-            <h1 className=" text-2xl ">Hello, There</h1>
+            <h1 className=" text-2xl ">Hello There,</h1>
             <p className="text-6xl font-bold">{MY_NAME}</p>
             <p className=" text-gray-400 text-xl italic">- Software Engineer</p>
           </div>
