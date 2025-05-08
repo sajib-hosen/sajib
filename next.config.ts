@@ -1,9 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  cacheHandler: require.resolve("./cache-handler.js"),
-
-  cacheMaxMemorySize: 0,
+  /* config options here */
 };
 
 export default nextConfig;
