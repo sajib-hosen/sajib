@@ -14,9 +14,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Sajib Hosen - Web Developer",
+  title: "Sajib Hosen - Software Engineer",
   description:
-    "Sajib Hosen, portfolio, web developer, MERN developer, next.js, nest.js, performance optimization",
+    "Sajib Hosen, portfolio, web developer, Software Engineer, MERN developer, next.js, nest.js, performance optimization",
 };
 
 export default function RootLayout({
