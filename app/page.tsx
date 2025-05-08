@@ -42,6 +42,7 @@ export default function Home() {
                 right={
                     <>
                         <h1 className=" text-2xl text-gray-400 italic ">
+                            <span className="">&quot;</span>
                             {`I'm a Software Engineer with 3 years of experience
                             building scalable and high-performance web
                             applications. I specialize in modern
@@ -54,6 +55,7 @@ export default function Home() {
                             international teams and thrive in fast-paced,
                             collaborative environments.`}
                         </h1>
+                        <span>&quot;</span>
                     </>
                 }
             />
