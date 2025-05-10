@@ -1,6 +1,7 @@
 import TimeStamp from "@/components/shared/time-stamp";
-import { MY_NAME } from "@/constent";
+import { LIGHTHOUSE, MY_NAME, PROJECT_IMG } from "@/constent";
 import { ArrowBigRight } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -14,7 +15,7 @@ const EachBlok = ({
   return (
     <div className=" flex flex-col sm:flex-row sm:border-b pb-4 sm:pb-16 ">
       <div className="w-full sm:w-1/2">
-        <div className="sticky top-[83px] flex justify-center items-center min-h-[200px] sm:min-h-[calc(100vh-200px)]">
+        <div className="sticky top-[83px] flex justify-center items-center min-h-[150px] sm:min-h-[calc(100vh-200px)]">
           {left}
         </div>
       </div>
@@ -132,7 +133,7 @@ export default function Home() {
                       JavaScript (ES6+), TypeScript, HTML5, CSS3, Sass
                     </span>
                   </li>
-                  <li>Next.js, React, NestJS, Node.js, Express</li>
+                  <li>Next.js, React, NestJS, Node.js, Express, Tailwindcss</li>
                 </ul>
               </div>
 
@@ -145,7 +146,7 @@ export default function Home() {
                 </h1>
                 <ul className=" ml-4">
                   <li className=" ">
-                    <span>REST APIs, GraphQL</span>
+                    <span>REST APIs</span>
                   </li>
                   <li>PostgreSQL, MongoDB, TypeORM</li>
                 </ul>
@@ -211,6 +212,30 @@ export default function Home() {
         }
       />
 
+      <div className="border-b ">
+        <h1 className=" text-center mb-6 text-2xl font-bold ">
+          Performance & Optimization
+        </h1>
+        <div className=" flex items-center justify-center pb-4 sm:pb-10">
+          <Image
+            src={LIGHTHOUSE}
+            width={600}
+            height={400}
+            alt="lighthouse"
+            className=" rounded"
+          />
+        </div>
+        <p className=" text-sm text-center mx-auto max-w-2/3 pb-4 sm:pb-16">
+          This Lighthouse audit demonstrates a web application I developed that
+          achieved perfect scores in all major categories: Performance,
+          Accessibility, Best Practices, and SEO. The result highlights my
+          ability to build fast, user-friendly, and technically sound
+          applications using modern frameworks and best development practices.
+          The application was built using Next.js, React, and Tailwind CSS, with
+          a strong focus on speed, accessibility, and overall user experience.
+        </p>
+      </div>
+
       <EachBlok
         left={
           <div className=" space-y-4">
@@ -220,13 +245,24 @@ export default function Home() {
         }
         right={
           <>
-            {[...Array(10)].map((_, index) => (
-              <p key={index} className="mb-8 text-lg sm:text-xl">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
-                quibusdam, tempore obcaecati alias cum rem suscipit quas veniam
-                omnis nesciunt non, repellendus quis voluptatum veritatis
-                reiciendis sint? Ut, ab voluptatem!
-              </p>
+            {[...Array(6)].map((_, index) => (
+              <div key={index} className="flex items-center space-x-6 ">
+                <div>
+                  <Image
+                    src={PROJECT_IMG.first}
+                    width={500}
+                    height={100}
+                    alt="project"
+                    className=" rounded"
+                  />
+                </div>
+                <p key={index} className=" text-md sm:text-lg">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
+                  quibusdam, tempore obcaecati alias cum rem suscipit quas
+                  veniam omnis nesciunt non, repellendus quis voluptatum
+                  veritatis reiciendis sint? Ut, ab voluptatem!
+                </p>
+              </div>
             ))}
           </>
         }
