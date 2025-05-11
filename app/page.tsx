@@ -21,7 +21,9 @@ const EachBlok = ({
       </div>
 
       <div className="w-full sm:w-1/2 min-h-screen flex items-center ">
-        <div className="space-y-16 pr-4 text-gray-300">{right}</div>
+        <div className="space-y-4 sm:space-y-16 pr-4 text-gray-300">
+          {right}
+        </div>
       </div>
     </div>
   );
@@ -212,7 +214,7 @@ export default function Home() {
         }
       />
 
-      <div className="border-b ">
+      <div className="border-b  ">
         <h1 className=" text-center mb-6 text-2xl font-bold ">
           Performance & Optimization
         </h1>
@@ -225,7 +227,7 @@ export default function Home() {
             className=" rounded"
           />
         </div>
-        <p className=" text-sm text-center mx-auto max-w-2/3 pb-4 sm:pb-16">
+        <p className=" text-sm text-center mx-auto sm:max-w-2/3 mb-8 sm:mb-0 pb-4 sm:pb-16">
           This Lighthouse audit demonstrates a web application I developed that
           achieved perfect scores in all major categories: Performance,
           Accessibility, Best Practices, and SEO. The result highlights my
