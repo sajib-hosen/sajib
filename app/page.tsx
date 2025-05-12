@@ -1,6 +1,6 @@
 import TimeStamp from "@/components/shared/time-stamp";
 import { LIGHTHOUSE, MY_NAME, PROJECT_IMG } from "@/constent";
-import { ArrowBigRight } from "lucide-react";
+import { ArrowBigRight, Facebook, Github, Linkedin, Mail } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -20,7 +20,7 @@ const EachBlok = ({
         </div>
       </div>
 
-      <div className="w-full sm:w-1/2 min-h-screen flex items-center ">
+      <div className="w-full sm:w-1/2 min-h-96 sm:min-h-screen flex items-center ">
         <div className="space-y-4 sm:space-y-16 pr-4 text-gray-300">
           {right}
         </div>
@@ -59,6 +59,39 @@ export default function Home() {
                             collaborative environments.`}
               <span className="text-2xl text-white px-2">&quot;</span>
             </h1>
+
+            <div className=" gap-4 flex flex-wrap items-center">
+              <button className=" h-10 px-4 cursor-pointer flex justify-center items-center rounded-full hover:bg-gray-700 bg-gray-800">
+                Get resume
+              </button>
+
+              <Link target="_block" href={"https://fahrezi.fyi/"}>
+                <button className="cursor-pointer h-10 w-10 hover:bg-gray-700 bg-gray-800 flex justify-center items-center rounded-full">
+                  <Facebook />
+                </button>
+              </Link>
+
+              <Link target="_block" href={"https://github.com/sajib-hosen"}>
+                <button className="cursor-pointer h-10 w-10 flex justify-center items-center rounded-full hover:bg-gray-700 bg-gray-800">
+                  <Github />
+                </button>
+              </Link>
+
+              <Link
+                target="_block"
+                href={"https://www.linkedin.com/in/sajib-hosen-815a29218/"}
+              >
+                <button className="cursor-pointer h-10 w-10 flex justify-center items-center rounded-full hover:bg-gray-700 bg-gray-800">
+                  <Linkedin />
+                </button>
+              </Link>
+
+              <Link href={"mailto:sajib.201h@gmail.com"}>
+                <button className="cursor-pointer h-10 w-10 flex justify-center items-center rounded-full hover:bg-gray-700 bg-gray-800">
+                  <Mail />
+                </button>
+              </Link>
+            </div>
           </>
         }
       />
@@ -157,6 +190,18 @@ export default function Home() {
               <div className=" space-y-3">
                 <h1 className=" font-bold flex items-center">
                   <ArrowBigRight className=" text-orange-400" />
+                  <span className=" text-lg sm:text-xl">Payment gateway</span>
+                </h1>
+                <ul className=" ml-4">
+                  <li className=" ">
+                    <span>sslcommerz, stripe</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div className=" space-y-3">
+                <h1 className=" font-bold flex items-center">
+                  <ArrowBigRight className=" text-orange-400" />
                   <span className="text-lg sm:text-xl">
                     Performance Optimization
                   </span>
@@ -215,8 +260,10 @@ export default function Home() {
       />
 
       <div className="border-b  ">
-        <h1 className=" text-center mb-6 text-2xl font-bold ">
-          Performance & Optimization
+        <h1 className="pl-30 text-center text-4xl font-bold ">Performance</h1>
+        <p className=" text-gray-400 text-2xl text-center">&</p>
+        <h1 className="pr-30 text-center mb-10 text-4xl font-bold ">
+          Optimization
         </h1>
         <div className=" flex items-center justify-center pb-4 sm:pb-10">
           <Image
@@ -249,21 +296,32 @@ export default function Home() {
           <>
             {[...Array(6)].map((_, index) => (
               <div key={index} className="flex items-center space-x-6 ">
-                <div>
-                  <Image
-                    src={PROJECT_IMG.first}
-                    width={500}
-                    height={100}
-                    alt="project"
-                    className=" rounded"
-                  />
+                <div className=" w-36">
+                  <Link target="_block" href={"https://clone-of.vercel.app/"}>
+                    <Image
+                      src={PROJECT_IMG.first}
+                      width={500}
+                      height={100}
+                      alt="project"
+                      className=" rounded"
+                    />
+                  </Link>
                 </div>
-                <p key={index} className=" text-md sm:text-lg">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
-                  quibusdam, tempore obcaecati alias cum rem suscipit quas
-                  veniam omnis nesciunt non, repellendus quis voluptatum
-                  veritatis reiciendis sint? Ut, ab voluptatem!
-                </p>
+                <div>
+                  <h1 className=" font-bold text-xl">BuyPort</h1>
+                  <p>project description - e-com shop with dashboard</p>
+                  <div className=" pt-2 space-x-2">
+                    <button className=" text-sm bg-gray-900 px-2 rounded">
+                      Next.js
+                    </button>
+                    <button className="text-sm bg-gray-900 px-2 rounded">
+                      Nest.js
+                    </button>
+                    <button className="text-sm bg-gray-900 px-2 rounded">
+                      Mongo DB
+                    </button>
+                  </div>
+                </div>
               </div>
             ))}
           </>
