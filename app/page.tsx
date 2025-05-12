@@ -69,7 +69,7 @@ export default function Home() {
             <h1 className="text-xl sm:text-2xl ">Hello There,</h1>
             <p className="text-5xl sm:text-6xl font-bold">{MY_NAME}</p>
             <p className=" text-gray-400 text-lg sm:text-xl italic">
-              - Software Engineer
+              - Web Developer
             </p>
           </div>
         }
@@ -77,7 +77,7 @@ export default function Home() {
           <>
             <h1 className="text-xl sm:text-2xl text-gray-300 italic ">
               <span className="text-2xl text-white px-2">&quot;</span>
-              {`I'm a Software Engineer with 3 years of experience
+              {`I'm a Web Developer with 3 years of experience
                             building scalable and high-performance web
                             applications. I specialize in modern
                             JavaScript/TypeScript frameworks like Next.js and
@@ -187,9 +187,9 @@ export default function Home() {
       />
 
       <div className="border-b text-gray-300 ">
-        <h1 className="pr-16 text-center text-4xl font-bold ">Performance</h1>
+        <h1 className="pr-16 text-center text-2xl font-bold ">Performance</h1>
         <p className=" text-gray-400 text-2xl text-center">&</p>
-        <h1 className="pl-16 text-center mb-10 text-4xl font-bold ">
+        <h1 className="pl-16 text-center mb-10 text-3xl font-bold ">
           Optimization
         </h1>
         <div className=" flex items-center justify-center pb-4 sm:pb-10">
