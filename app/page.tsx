@@ -69,7 +69,7 @@ export default function Home() {
             <h1 className="text-xl sm:text-2xl ">Hello There,</h1>
             <p className="text-5xl sm:text-6xl font-bold">{MY_NAME}</p>
             <p className=" text-gray-400 text-lg sm:text-xl italic">
-              - Web Developer
+              - Software Engineer
             </p>
           </div>
         }
@@ -77,7 +77,7 @@ export default function Home() {
           <>
             <h1 className="text-xl sm:text-2xl text-gray-300 italic ">
               <span className="text-2xl text-white px-2">&quot;</span>
-              {`I'm a Web Developer with 3 years of experience
+              {`I'm a software engineer with 3 years of experience
                             building scalable and high-performance web
                             applications. I specialize in modern
                             JavaScript/TypeScript frameworks like Next.js and
