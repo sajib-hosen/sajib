@@ -1,9 +1,14 @@
 import TimeStamp from "@/components/shared/time-stamp";
-import { LIGHTHOUSE, MY_NAME, PROJECT_IMG } from "@/constent";
+import { LIGHTHOUSE, MY_NAME } from "@/constent";
+import { projects_data } from "@/data/data";
 import { ArrowBigRight, Facebook, Github, Linkedin, Mail } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+
+const Tag = ({ label }: { label: string }) => {
+  return <button className=" text-sm bg-gray-900 px-2 rounded">{label}</button>;
+};
 
 const EachBlok = ({
   left,
@@ -65,7 +70,12 @@ export default function Home() {
                 Get resume
               </button>
 
-              <Link target="_block" href={"https://fahrezi.fyi/"}>
+              <Link
+                target="_block"
+                href={
+                  "https://www.facebook.com/share/1BeUqtt9iF/?mibextid=qi2Omg"
+                }
+              >
                 <button className="cursor-pointer h-10 w-10 hover:bg-gray-700 bg-gray-800 flex justify-center items-center rounded-full">
                   <Facebook />
                 </button>
@@ -259,10 +269,10 @@ export default function Home() {
         }
       />
 
-      <div className="border-b  ">
-        <h1 className="pl-30 text-center text-4xl font-bold ">Performance</h1>
+      <div className="border-b text-gray-300 ">
+        <h1 className="pr-16 text-center text-4xl font-bold ">Performance</h1>
         <p className=" text-gray-400 text-2xl text-center">&</p>
-        <h1 className="pr-30 text-center mb-10 text-4xl font-bold ">
+        <h1 className="pl-16 text-center mb-10 text-4xl font-bold ">
           Optimization
         </h1>
         <div className=" flex items-center justify-center pb-4 sm:pb-10">
@@ -294,12 +304,12 @@ export default function Home() {
         }
         right={
           <>
-            {[...Array(6)].map((_, index) => (
+            {projects_data.map((e, index) => (
               <div key={index} className="flex items-center space-x-6 ">
                 <div className=" w-36">
-                  <Link target="_block" href={"https://clone-of.vercel.app/"}>
+                  <Link target="_block" href={e.project_url}>
                     <Image
-                      src={PROJECT_IMG.first}
+                      src={e.img_url}
                       width={500}
                       height={100}
                       alt="project"
@@ -308,18 +318,16 @@ export default function Home() {
                   </Link>
                 </div>
                 <div>
-                  <h1 className=" font-bold text-xl">BuyPort</h1>
-                  <p>project description - e-com shop with dashboard</p>
+                  <h1 className=" font-bold text-xl">
+                    <Link target="_block" href={e.project_url}>
+                      {e.name}
+                    </Link>
+                  </h1>
+                  <p>{e.description}</p>
                   <div className=" pt-2 space-x-2">
-                    <button className=" text-sm bg-gray-900 px-2 rounded">
-                      Next.js
-                    </button>
-                    <button className="text-sm bg-gray-900 px-2 rounded">
-                      Nest.js
-                    </button>
-                    <button className="text-sm bg-gray-900 px-2 rounded">
-                      Mongo DB
-                    </button>
+                    {e.tags.length
+                      ? e.tags.map((t) => <Tag key={t} label={t} />)
+                      : null}
                   </div>
                 </div>
               </div>
