@@ -27,8 +27,12 @@ const TopNav = () => {
           <li>
             <Link href={"/"}>Home</Link>
           </li>
-          <li>Blog</li>
-          <li>Contact</li>
+          <li>
+            <Link href={"/blog"}>Blog</Link>
+          </li>
+          <li>
+            <Link href={"/contact"}>Contact</Link>
+          </li>
         </ul>
       </nav>
     </div>
