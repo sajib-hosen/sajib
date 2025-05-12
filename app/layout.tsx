@@ -15,8 +15,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Web Developer - Sajib Hosen",
-    template: "%s | Web Developer - Sajib Hosen",
+    default: "Software Engineer - Sajib Hosen",
+    template: "%s | Software Engineer - Sajib Hosen",
   },
   description:
     "I'm Sajib Hosen, a full stack web developer specializing in MERN stack, Next.js, and NestJS. Explore my portfolio showcasing modern, high-performance web applications and software engineering projects.",
