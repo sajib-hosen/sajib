@@ -1,10 +1,36 @@
 import TimeStamp from "@/components/shared/time-stamp";
 import { LIGHTHOUSE, MY_NAME } from "@/constent";
-import { projects_data } from "@/data/data";
-import { ArrowBigRight, Facebook, Github, Linkedin, Mail } from "lucide-react";
+import { projects_data, skills_data, social_links_data } from "@/data/data";
+import { ArrowBigRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+
+const DisplaySkill = ({
+  title,
+  skills,
+}: {
+  title: string;
+  skills: string[];
+}) => {
+  return (
+    <div className=" space-y-3">
+      <h1 className=" font-bold flex items-center">
+        <ArrowBigRight className=" text-orange-400" />
+        <span className=" text-lg sm:text-xl">{title}</span>
+      </h1>
+      <ul className=" ml-4">
+        {skills.length
+          ? skills.map((e, i) => (
+              <li key={i} className=" ">
+                <span>{e}</span>
+              </li>
+            ))
+          : null}
+      </ul>
+    </div>
+  );
+};
 
 const Tag = ({ label }: { label: string }) => {
   return <button className=" text-sm bg-gray-900 px-2 rounded">{label}</button>;
@@ -66,41 +92,22 @@ export default function Home() {
             </h1>
 
             <div className=" gap-4 flex flex-wrap items-center">
-              <button className=" h-10 px-4 cursor-pointer flex justify-center items-center rounded-full hover:bg-gray-700 bg-gray-800">
+              {/* <button className=" h-10 px-4 cursor-pointer flex justify-center items-center rounded-full hover:bg-gray-700 bg-gray-800">
                 Get resume
-              </button>
+              </button> */}
 
-              <Link
-                target="_block"
-                href={
-                  "https://www.facebook.com/share/1BeUqtt9iF/?mibextid=qi2Omg"
-                }
-              >
-                <button className="cursor-pointer h-10 w-10 hover:bg-gray-700 bg-gray-800 flex justify-center items-center rounded-full">
-                  <Facebook />
-                </button>
-              </Link>
-
-              <Link target="_block" href={"https://github.com/sajib-hosen"}>
-                <button className="cursor-pointer h-10 w-10 flex justify-center items-center rounded-full hover:bg-gray-700 bg-gray-800">
-                  <Github />
-                </button>
-              </Link>
-
-              <Link
-                target="_block"
-                href={"https://www.linkedin.com/in/sajib-hosen-815a29218/"}
-              >
-                <button className="cursor-pointer h-10 w-10 flex justify-center items-center rounded-full hover:bg-gray-700 bg-gray-800">
-                  <Linkedin />
-                </button>
-              </Link>
-
-              <Link href={"mailto:sajib.201h@gmail.com"}>
-                <button className="cursor-pointer h-10 w-10 flex justify-center items-center rounded-full hover:bg-gray-700 bg-gray-800">
-                  <Mail />
-                </button>
-              </Link>
+              {social_links_data.length
+                ? social_links_data.map((lnk) => (
+                    <Link key={lnk.link} target="_block" href={lnk.link}>
+                      <button
+                        title={lnk.title}
+                        className="cursor-pointer h-10 w-10 hover:bg-gray-700 bg-gray-800 flex justify-center items-center rounded-full"
+                      >
+                        {lnk.icon}
+                      </button>
+                    </Link>
+                  ))
+                : null}
             </div>
           </>
         }
@@ -165,105 +172,15 @@ export default function Home() {
         right={
           <>
             <div className=" space-y-6">
-              <div className=" space-y-3">
-                <h1 className=" font-bold flex items-center">
-                  <ArrowBigRight className=" text-orange-400" />
-                  <span className="text-lg sm:text-xl">
-                    Programming Languages & Frameworks
-                  </span>
-                </h1>
-                <ul className=" ml-4">
-                  <li className=" ">
-                    <span>
-                      JavaScript (ES6+), TypeScript, HTML5, CSS3, Sass
-                    </span>
-                  </li>
-                  <li>Next.js, React, NestJS, Node.js, Express, Tailwindcss</li>
-                </ul>
-              </div>
-
-              <div className=" space-y-3">
-                <h1 className=" font-bold flex items-center">
-                  <ArrowBigRight className=" text-orange-400" />
-                  <span className=" text-lg sm:text-xl">
-                    Backend & Databases
-                  </span>
-                </h1>
-                <ul className=" ml-4">
-                  <li className=" ">
-                    <span>REST APIs</span>
-                  </li>
-                  <li>PostgreSQL, MongoDB, TypeORM</li>
-                </ul>
-              </div>
-
-              <div className=" space-y-3">
-                <h1 className=" font-bold flex items-center">
-                  <ArrowBigRight className=" text-orange-400" />
-                  <span className=" text-lg sm:text-xl">Payment gateway</span>
-                </h1>
-                <ul className=" ml-4">
-                  <li className=" ">
-                    <span>sslcommerz, stripe</span>
-                  </li>
-                </ul>
-              </div>
-
-              <div className=" space-y-3">
-                <h1 className=" font-bold flex items-center">
-                  <ArrowBigRight className=" text-orange-400" />
-                  <span className="text-lg sm:text-xl">
-                    Performance Optimization
-                  </span>
-                </h1>
-                <ul className=" ml-4">
-                  <li className=" ">
-                    <span>Lighthouse, bundle-analyzer</span>
-                  </li>
-                </ul>
-              </div>
-
-              <div className=" space-y-3">
-                <h1 className=" font-bold flex items-center">
-                  <ArrowBigRight className=" text-orange-400" />
-                  <span className=" text-lg sm:text-xl">DevOps & Tools</span>
-                </h1>
-                <ul className=" ml-4">
-                  <li className=" ">
-                    <span>
-                      Git, GitHub, Docker, AWS (EC2, S3, SNS, SES, CDN), Vercel
-                    </span>
-                  </li>
-                  <li>CI/CD (GitHub Actions), Postman, Swagger</li>
-                </ul>
-              </div>
-
-              <div className=" space-y-3">
-                <h1 className=" font-bold flex items-center">
-                  <ArrowBigRight className=" text-orange-400" />
-                  <span className="text-lg sm:text-xl">Testing</span>
-                </h1>
-                <ul className=" ml-4">
-                  <li className=" ">
-                    <span>Jest</span>
-                  </li>
-                </ul>
-              </div>
-
-              <div className=" space-y-3">
-                <h1 className=" font-bold flex items-center">
-                  <ArrowBigRight className=" text-orange-400" />
-                  <span className="text-lg sm:text-xl">Soft Skills</span>
-                </h1>
-                <ul className=" ml-4">
-                  <li className=" ">
-                    <span>
-                      Remote collaboration, Clear communication, Agile/Scrum
-                    </span>
-                  </li>
-                  <li>Code quality, Attention to detail</li>
-                </ul>
-              </div>
+              {skills_data.length
+                ? skills_data.map((info) => (
+                    <DisplaySkill
+                      key={info.title}
+                      title={info.title}
+                      skills={info.skills}
+                    />
+                  ))
+                : null}
             </div>
           </>
         }
