@@ -4,7 +4,7 @@ import { Facebook, Github, Linkedin, Mail } from "lucide-react";
 export const projects_data = [
   {
     name: "Buy Port",
-    img_url: PROJECT_IMG.first,
+    img_url: PROJECT_IMG.buyport,
     description: "E-Commerce websites for multiple creators",
     tags: ["Next.js", "Nest.js", "sslcommerz", "Mongo DB"],
     project_url: "https://clone-of.vercel.app",
@@ -84,20 +84,24 @@ export const social_links_data = [
     title: "Facebook",
     link: "https://www.facebook.com/share/1BeUqtt9iF/?mibextid=qi2Omg",
     icon: <Facebook />,
+    short_url: "@sajib.hosen.142",
   },
   {
     title: "GitHub",
     link: "https://github.com/sajib-hosen",
     icon: <Github />,
+    short_url: "@sajib-hosen",
   },
   {
     title: "Linkedin",
     link: "https://www.linkedin.com/in/sajib-hosen-815a29218/",
     icon: <Linkedin />,
+    short_url: "@sajib-hosen-815a29218",
   },
   {
     title: "E-mail",
     link: "mailto:sajib.201h@gmail.com",
     icon: <Mail />,
+    short_url: "sajib.201h@gmail.com",
   },
 ];
