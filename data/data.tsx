@@ -43,27 +43,39 @@ export const skills_data = [
   {
     title: "Programming Languages & Frameworks",
     skills: [
-      "JavaScript (ES6+), TypeScript, HTML5, CSS3, Sass",
-      "Next.js, React, NestJS, Node.js, Express, Tailwindcss",
+      "JavaScript (ES6+",
+      "TypeScript",
+      "Next.js",
+      "React",
+      "NestJS",
+      "Node.js",
+      "Express",
+      "Tailwindcss",
     ],
   },
   {
     title: "Backend & Databases",
-    skills: ["REST APIs", "PostgreSQL, MongoDB, TypeORM"],
+    skills: ["REST APIs", "PostgreSQL", "MongoDB", "TypeORM"],
   },
   {
     title: "Payment Gateway",
-    skills: ["sslcommerz, stripe"],
+    skills: ["sslcommerz", "stripe"],
   },
   {
     title: "Performance Optimization",
-    skills: ["Lighthouse, bundle-analyzer"],
+    skills: ["Lighthouse", "bundle-analyzer"],
   },
   {
     title: "DevOps & Tools",
     skills: [
-      "Git, GitHub, Docker, AWS (EC2, S3, SNS, SES, CDN), Vercel",
-      "CI/CD (GitHub Actions), Postman, Swagger",
+      "Git",
+      "GitHub",
+      "Docker",
+      "AWS (EC2, S3, SNS, SES, CDN)",
+      "Vercel",
+      "CI/CD (GitHub Actions)",
+      "Postman",
+      "Swagger",
     ],
   },
   {
@@ -73,8 +85,11 @@ export const skills_data = [
   {
     title: "Soft Skills",
     skills: [
-      "Remote collaboration, Clear communication, Agile/Scrum",
-      "Code quality, Attention to detail",
+      "Remote collaboration",
+      "Clear communication",
+      "Agile/Scrum",
+      "Code quality",
+      "Attention to detail",
     ],
   },
 ];

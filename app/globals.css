@@ -44,7 +44,7 @@
 }
 
 .content-w {
-  @apply mx-auto max-w-[1600px];
+  @apply mx-auto max-w-[1400px];
 }
 
 :root {

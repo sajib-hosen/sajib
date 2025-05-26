@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import TopNav from "@/components/shared/top-nav";
-import { MY_NAME } from "@/constent";
+import { MY_NAME, SAJIB_ICON } from "@/constent";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -43,6 +43,23 @@ export const metadata: Metadata = {
     "Clean Code",
     "Modern Web Development",
   ],
+  openGraph: {
+    images: [
+      {
+        url: SAJIB_ICON, // path to your Open Graph image
+        width: 1200,
+        height: 630,
+        alt: "Sajib Hosen Portfolio Preview",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    images: [SAJIB_ICON],
+    title: MY_NAME,
+    description:
+      "Full stack web developer specializing in MERN stack, Next.js, and NestJS.",
+  },
 };
 
 export default function RootLayout({
