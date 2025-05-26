@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import TopNav from "@/components/shared/top-nav";
+import { MY_NAME } from "@/constent";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -15,8 +16,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Software Engineer - Sajib Hosen",
-    template: "%s | Software Engineer - Sajib Hosen",
+    default: MY_NAME,
+    template: `%s - ${MY_NAME}`,
   },
   description:
     "I'm Sajib Hosen, a full stack web developer specializing in MERN stack, Next.js, and NestJS. Explore my portfolio showcasing modern, high-performance web applications and software engineering projects.",

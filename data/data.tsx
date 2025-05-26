@@ -81,10 +81,10 @@ export const skills_data = [
 
 export const social_links_data = [
   {
-    title: "Facebook",
-    link: "https://www.facebook.com/share/1BeUqtt9iF/?mibextid=qi2Omg",
-    icon: <Facebook />,
-    short_url: "@sajib.hosen.142",
+    title: "E-mail",
+    link: "mailto:sajib.201h@gmail.com",
+    icon: <Mail />,
+    short_url: "sajib.201h@gmail.com",
   },
   {
     title: "GitHub",
@@ -98,10 +98,11 @@ export const social_links_data = [
     icon: <Linkedin />,
     short_url: "@sajib-hosen-815a29218",
   },
+
   {
-    title: "E-mail",
-    link: "mailto:sajib.201h@gmail.com",
-    icon: <Mail />,
-    short_url: "sajib.201h@gmail.com",
+    title: "Facebook",
+    link: "https://www.facebook.com/share/1BeUqtt9iF/?mibextid=qi2Omg",
+    icon: <Facebook />,
+    short_url: "@sajib.hosen.142",
   },
 ];

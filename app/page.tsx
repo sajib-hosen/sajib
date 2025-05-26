@@ -1,5 +1,5 @@
 import TimeStamp from "@/components/shared/time-stamp";
-import { LIGHTHOUSE, MY_NAME } from "@/constent";
+import { LIGHTHOUSE, MY_NAME, PROFESSION } from "@/constent";
 import { projects_data, skills_data, social_links_data } from "@/data/data";
 import { ArrowBigRight } from "lucide-react";
 import Image from "next/image";
@@ -69,15 +69,15 @@ export default function Home() {
             <h1 className="text-xl sm:text-2xl ">Hello There,</h1>
             <p className="text-5xl sm:text-6xl font-bold">{MY_NAME}</p>
             <p className=" text-gray-400 text-lg sm:text-xl italic">
-              - Software Engineer
+              - {PROFESSION}
             </p>
           </div>
         }
         right={
           <>
-            <h1 className="text-xl sm:text-2xl text-gray-300 italic ">
+            <h1 className="text-xl sm:text-2xl text-gray-300 ">
               <span className="text-2xl text-white px-2">&quot;</span>
-              {`I'm a software engineer with 3 years of experience
+              {/* {`I'm a ${PROFESSION}, with 3 years of experience
                             building scalable and high-performance web
                             applications. I specialize in modern
                             JavaScript/TypeScript frameworks like Next.js and
@@ -87,7 +87,15 @@ export default function Home() {
                             backend performance to ensure fast, efficient
                             applications. I've worked remotely with
                             international teams and thrive in fast-paced,
-                            collaborative environments.`}
+                            collaborative environments.`} */}
+              I&apos;m a developer at{" "}
+              <Link className=" text-gray-500" href={"https://www.dolami.co/"}>
+                Dolami, Inc.
+              </Link>
+              , where I specialize in building modern web applications using
+              Next.js for the frontend and Nest.js for the backend. I&apos;m
+              passionate about creating optimized, scalable, and user-friendly
+              applications that deliver real value.
               <span className="text-2xl text-white px-2">&quot;</span>
             </h1>
 
@@ -136,7 +144,7 @@ export default function Home() {
                 </p>
               </div>
               <p className="text-lg sm:text-xl">
-                <Link href={"https://www.dolami.co/"}>Dolami</Link>, Inc. is a
+                <Link href={"https://www.dolami.co/"}>Dolami, Inc</Link>. is a
                 San Francisco-based startup founded in 2022, specializing in
                 virtual reality (VR) technologies. They develop innovative
                 products like the X MASK, a facial tracking device that mirrors
@@ -201,7 +209,7 @@ export default function Home() {
             className=" rounded"
           />
         </div>
-        <p className=" text-sm text-center mx-auto sm:max-w-2/3 mb-8 sm:mb-0 pb-4 sm:pb-16">
+        <p className=" text-center mx-auto sm:max-w-2/3 mb-8 sm:mb-0 pb-4 sm:pb-16">
           This Lighthouse audit demonstrates a web application I developed that
           achieved perfect scores in all major categories: Performance,
           Accessibility, Best Practices, and SEO. The result highlights my
