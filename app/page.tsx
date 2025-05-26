@@ -1,7 +1,7 @@
 import TimeStamp from "@/components/shared/time-stamp";
 import { LIGHTHOUSE, MY_NAME, PROFESSION } from "@/constent";
 import { projects_data, skills_data, social_links_data } from "@/data/data";
-import { ArrowBigRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -16,18 +16,12 @@ const DisplaySkill = ({
   return (
     <div className=" space-y-3">
       <h1 className=" font-bold flex items-center">
-        <ArrowBigRight className=" text-orange-400" />
-        <span className=" text-lg sm:text-xl">{title}</span>
+        <ArrowRight size={20} className=" mr-2" />
+        <span className=" text-lg">{title}</span>
       </h1>
-      <ul className=" ml-4">
-        {skills.length
-          ? skills.map((e, i) => (
-              <li key={i} className=" ">
-                <span>{e}</span>
-              </li>
-            ))
-          : null}
-      </ul>
+      <div className=" ml-4 space-x-2 ">
+        {skills.length ? skills.map((e, i) => <Tag key={i} label={e} />) : null}
+      </div>
     </div>
   );
 };
@@ -44,7 +38,7 @@ const EachBlok = ({
   right: React.ReactNode;
 }) => {
   return (
-    <div className=" flex flex-col sm:flex-row sm:border-b pb-4 sm:pb-16 ">
+    <div className=" flex flex-col sm:flex-row  pb-4 sm:pb-16 ">
       <div className="w-full sm:w-1/2">
         <div className="sticky top-[83px] flex justify-center items-center min-h-[150px] sm:min-h-[calc(100vh-200px)]">
           {left}
@@ -77,33 +71,17 @@ export default function Home() {
           <>
             <h1 className="text-xl sm:text-2xl text-gray-300 ">
               <span className="text-2xl text-white px-2">&quot;</span>
-              {/* {`I'm a ${PROFESSION}, with 3 years of experience
-                            building scalable and high-performance web
-                            applications. I specialize in modern
-                            JavaScript/TypeScript frameworks like Next.js and
-                            NestJS, with a strong focus on full-stack
-                            development. I’m passionate about writing clean,
-                            maintainable code and optimizing both frontend and
-                            backend performance to ensure fast, efficient
-                            applications. I've worked remotely with
-                            international teams and thrive in fast-paced,
-                            collaborative environments.`} */}
               I&apos;m a developer at{" "}
               <Link className=" text-gray-500" href={"https://www.dolami.co/"}>
                 Dolami, Inc.
               </Link>
-              , where I specialize in building modern web applications using
-              Next.js for the frontend and Nest.js for the backend. I&apos;m
-              passionate about creating optimized, scalable, and user-friendly
-              applications that deliver real value.
+              , where I work with Next.js and Nest.js. I&apos;m passionate about
+              creating optimized, scalable, and user-friendly applications for
+              users.
               <span className="text-2xl text-white px-2">&quot;</span>
             </h1>
 
             <div className=" gap-4 flex flex-wrap items-center">
-              {/* <button className=" h-10 px-4 cursor-pointer flex justify-center items-center rounded-full hover:bg-gray-700 bg-gray-800">
-                Get resume
-              </button> */}
-
               {social_links_data.length
                 ? social_links_data.map((lnk) => (
                     <Link key={lnk.link} target="_block" href={lnk.link}>
@@ -117,6 +95,7 @@ export default function Home() {
                   ))
                 : null}
             </div>
+            <div className=" h-24"></div>
           </>
         }
       />
@@ -140,7 +119,7 @@ export default function Home() {
                   </h1>
                 </Link>
                 <p className=" text-sm text-gray-400 italic pr-0 sm:pr-8">
-                  May 2020 - Current
+                  June 2023 - Current
                 </p>
               </div>
               <p className="text-lg sm:text-xl">
@@ -194,7 +173,7 @@ export default function Home() {
         }
       />
 
-      <div className="border-b text-gray-300 ">
+      <div className="text-gray-300 ">
         <h1 className="pr-16 text-center text-2xl font-bold ">Performance</h1>
         <p className=" text-gray-400 text-2xl text-center">&</p>
         <h1 className="pl-16 text-center mb-10 text-3xl font-bold ">
@@ -260,6 +239,18 @@ export default function Home() {
           </>
         }
       />
+
+      <div className=" border-t"></div>
+
+      <div className=" flex justify-center ">
+        <div className=" flex gap-4 text-gray-500">
+          {social_links_data.map((e) => (
+            <Link key={e.short_url} href={e.link}>
+              {e.title}
+            </Link>
+          ))}
+        </div>
+      </div>
 
       <TimeStamp />
     </div>
