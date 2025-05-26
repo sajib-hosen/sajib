@@ -9,3 +9,5 @@ export const PROJECT_IMG = {
 export const LIGHTHOUSE = "/images/lighthouse3.png";
 
 export const MY_NAME = "Sajib Hosen";
+
+export const PROFESSION = "Developer";
