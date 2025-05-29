@@ -119,7 +119,8 @@ export default function Home() {
                   </h1>
                 </Link>
                 <p className=" text-sm text-gray-400 italic pr-0 sm:pr-8">
-                  June 2023 - Current
+                  {/* 16<sup>th</sup> March 2023 - Current */}
+                  March 2023 - Current
                 </p>
               </div>
               <p className="text-lg sm:text-xl">
