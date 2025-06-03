@@ -1,5 +1,10 @@
 # Changelog
 
+## <small>0.3.1 (2025-06-03)</small>
+
+* update blog details page ([e7cd767](https://github.com/sajib-hosen/sajib/commit/e7cd767))
+* update blog details page ([a795e67](https://github.com/sajib-hosen/sajib/commit/a795e67))
+
 ## 0.3.0 (2025-06-03)
 
 * fix: add build workflow fixes ([e1ea3c8](https://github.com/sajib-hosen/sajib/commit/e1ea3c8))
