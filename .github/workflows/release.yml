@@ -1,0 +1,41 @@
+name: Release
+
+on:
+    # push:
+    #     branches:
+    #         - main # Or your release branch
+    # workflow_dispatch: # Optional: allow manual trigger from GitHub UI
+    workflow_run:
+        workflows: ["Frontend CI"] # Must match the name in build-test.yml
+        types:
+            - completed
+
+jobs:
+    release:
+        if: ${{ github.event.workflow_run.conclusion == 'success' }}
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Checkout repo
+              uses: actions/checkout@v4
+              with:
+                  fetch-depth: 0 # Important for changelog generation
+
+            - name: Use Node.js
+              uses: actions/setup-node@v4
+              with:
+                  node-version: "20"
+                  cache: "pnpm"
+
+            - name: Install pnpm
+              uses: pnpm/action-setup@v2
+              with:
+                  version: 8
+
+            - name: Install dependencies
+              run: pnpm install
+
+            - name: Run release-it
+              env:
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Provided by GitHub Actions
+              run: pnpm release --ci
