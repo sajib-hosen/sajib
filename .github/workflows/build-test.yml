@@ -22,4 +22,3 @@ jobs:
                   npm install -g pnpm@latest
                   pnpm install
                   pnpm run build
-                  pnpm run release
