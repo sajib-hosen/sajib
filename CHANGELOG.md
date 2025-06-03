@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.2.0 (2025-06-03)
+
+* fix: fix the contact link page ([23140e0](https://github.com/sajib-hosen/sajib/commit/23140e0))
+* feat: blog page added ([7e9aed0](https://github.com/sajib-hosen/sajib/commit/7e9aed0))
+
 ## <small>0.1.1 (2025-06-03)</small>
 
 * fix: fixing release it ([d543c32](https://github.com/sajib-hosen/sajib/commit/d543c32))
