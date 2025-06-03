@@ -37,6 +37,7 @@
   },
   "release-it": {
     "git": {
+      "requireCleanWorkingDir": true,
       "commitMessage": "chore: release v${version}"
     },
     "github": {
@@ -78,7 +79,7 @@
               "type": "test",
               "section": "Tests"
             },
-            {
+            { 
               "type": "chore",
               "section": "Chores"
             }

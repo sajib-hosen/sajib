@@ -26,7 +26,14 @@ jobs:
                   npm install -g pnpm@latest
                   pnpm install
 
+            - name: Check for uncommitted changes (debug)
+              run: |
+                  git status
+                  git diff
+            - name: Discard uncommitted changes (if any)
+              run: git reset --hard
+
             - name: Run release-it
               env:
-                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Provided by GitHub Actions
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
               run: pnpm release --ci
