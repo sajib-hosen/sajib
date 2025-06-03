@@ -10,6 +10,12 @@ const BlogPage = () => {
                 harum accusamus dolorem culpa deleniti. Odio ipsum vero, quia
                 harum aspernatur quam.
             </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+                corrupti harum omnis ducimus minima beatae et maxime? Ratione
+                harum accusamus dolorem culpa deleniti. Odio ipsum vero, quia
+                harum aspernatur quam.
+            </p>
         </div>
     );
 };
