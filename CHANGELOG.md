@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.3.0 (2025-06-03)
+
+* fix: add build workflow fixes ([e1ea3c8](https://github.com/sajib-hosen/sajib/commit/e1ea3c8))
+* fix: add write permissions ([b5c2df9](https://github.com/sajib-hosen/sajib/commit/b5c2df9))
+* fix: fix the error ([a34b3be](https://github.com/sajib-hosen/sajib/commit/a34b3be))
+* fix: fix workflow ([3c8ea4b](https://github.com/sajib-hosen/sajib/commit/3c8ea4b))
+* fix: update github adction ([1ec5e2d](https://github.com/sajib-hosen/sajib/commit/1ec5e2d))
+* feat: added realease log in workflow ([86dd4f9](https://github.com/sajib-hosen/sajib/commit/86dd4f9))
+* feat: release automation added ([1e499bb](https://github.com/sajib-hosen/sajib/commit/1e499bb))
+
 ## <small>0.2.1 (2025-06-03)</small>
 
 ## 0.2.0 (2025-06-03)
