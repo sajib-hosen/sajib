@@ -1,5 +1,7 @@
 # Changelog
 
+## <small>0.2.1 (2025-06-03)</small>
+
 ## 0.2.0 (2025-06-03)
 
 * fix: fix the contact link page ([23140e0](https://github.com/sajib-hosen/sajib/commit/23140e0))
