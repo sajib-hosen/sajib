@@ -33,6 +33,11 @@ jobs:
             - name: Discard uncommitted changes (if any)
               run: git reset --hard
 
+            - name: Configure Git user
+              run: |
+                  git config --global user.name "github-actions[bot]"
+                  git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
             - name: Run release-it
               env:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
