@@ -1,5 +1,9 @@
 # Changelog
 
+## <small>0.3.2 (2025-06-12)</small>
+
+* update some test ([a52ecb9](https://github.com/sajib-hosen/sajib/commit/a52ecb9))
+
 ## <small>0.3.1 (2025-06-03)</small>
 
 * update blog details page ([e7cd767](https://github.com/sajib-hosen/sajib/commit/e7cd767))
