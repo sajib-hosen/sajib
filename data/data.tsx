@@ -41,9 +41,9 @@ export const projects_data = [
 
 export const skills_data = [
   {
-    title: "Programming Languages & Frameworks",
+    title: "Languages & Frameworks",
     skills: [
-      "JavaScript (ES6+",
+      "JavaScript (ES6+)",
       "TypeScript",
       "Next.js",
       "React",
@@ -71,9 +71,9 @@ export const skills_data = [
       "Git",
       "GitHub",
       "Docker",
-      "AWS (EC2, S3, SNS, SES, CDN)",
+      "AWS",
       "Vercel",
-      "CI/CD (GitHub Actions)",
+      "CI/CD",
       "Postman",
       "Swagger",
     ],
