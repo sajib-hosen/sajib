@@ -26,6 +26,7 @@ const DisplaySkill = ({
   );
 };
 
+// this display tags
 const Tag = ({ label }: { label: string }) => {
   return <button className=" text-sm bg-gray-900 px-2 rounded">{label}</button>;
 };
