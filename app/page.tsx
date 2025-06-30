@@ -213,13 +213,15 @@ export default function Home() {
               <div key={index} className="flex items-center space-x-6 ">
                 <div className=" w-36">
                   <Link target="_block" href={e.project_url}>
-                    <Image
-                      src={e.img_url}
-                      width={500}
-                      height={100}
-                      alt="project"
-                      className=" rounded"
-                    />
+                    <div className=" min-w-[150px]">
+                      <Image
+                        src={e.img_url}
+                        width={500}
+                        height={100}
+                        alt="project"
+                        className=" rounded"
+                      />
+                    </div>
                   </Link>
                 </div>
                 <div>

@@ -10,11 +10,12 @@ export const projects_data = [
     project_url: "https://clone-of.vercel.app",
   },
   {
-    name: "Halal Grocery Shop",
+    name: "The Solar System",
     img_url: PROJECT_IMG.first,
-    description: "E-commerce to manage a grocery shop",
-    tags: ["React.js", "express.js", "Mongo DB", "firebase"],
-    project_url: "https://illustrious-semolina-241bb3.netlify.app/",
+    description:
+      "A 3D interactive model of the Solar System built with Next.js and Three.js. Explore planets, moons, and orbits in real-time.",
+    tags: ["Next.js", "Three.js", "React.js", "Tailwindcss"],
+    project_url: "https://soler-system-pzeh.vercel.app/",
   },
   {
     name: "BCS Joyjatra",

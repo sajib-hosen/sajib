@@ -1,6 +1,6 @@
 export const SAJIB_ICON = "/images/sajib.png";
 export const PROJECT_IMG = {
-  first: "/images/bcs_books.1.png",
+  first: "/images/soler_system.png",
   secant: "/images/nav_bar.5.png",
   third: "/images/section1.8.png",
   buyport: "/images/buyport1.png",
