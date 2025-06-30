@@ -1,5 +1,10 @@
 # Changelog
 
+## <small>0.3.4 (2025-06-30)</small>
+
+* trying to deploy ([b2993be](https://github.com/sajib-hosen/sajib/commit/b2993be))
+* updated package log ([b97a47e](https://github.com/sajib-hosen/sajib/commit/b97a47e))
+
 ## <small>0.3.3 (2025-06-30)</small>
 
 * new project added ([cfb8ab4](https://github.com/sajib-hosen/sajib/commit/cfb8ab4))
