@@ -1,5 +1,9 @@
 # Changelog
 
+## <small>0.3.3 (2025-06-30)</small>
+
+* new project added ([cfb8ab4](https://github.com/sajib-hosen/sajib/commit/cfb8ab4))
+
 ## <small>0.3.2 (2025-06-12)</small>
 
 * update some test ([a52ecb9](https://github.com/sajib-hosen/sajib/commit/a52ecb9))
