@@ -9,6 +9,7 @@ export const PROJECT_IMG = {
   buyport: "/images/buyport1.png",
   avatown: "/images/avatown.png",
   flynest: "/images/flynest.png",
+  eduayna: "/images/eduayna.webp",
 };
 
 export const LIGHTHOUSE = "/images/lighthouse3.png";

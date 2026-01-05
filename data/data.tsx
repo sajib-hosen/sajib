@@ -11,8 +11,8 @@ export const projects_data = [
   },
   {
     name: "EduAyna",
-    img_url: PROJECT_IMG.flynest,
-    description: "E-Commerce websites for multiple creators",
+    img_url: PROJECT_IMG.eduayna,
+    description: "Education management system (SaaS)",
     tags: ["Next.js", "Nest.js", "sslcommerz", "Mongo DB"],
     project_url: "https://flynest.net/",
   },
