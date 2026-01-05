@@ -7,6 +7,8 @@ export const PROJECT_IMG = {
   secant: "/images/nav_bar.5.png",
   third: "/images/section1.8.png",
   buyport: "/images/buyport1.png",
+  avatown: "/images/avatown.png",
+  flynest: "/images/flynest.png",
 };
 
 export const LIGHTHOUSE = "/images/lighthouse3.png";

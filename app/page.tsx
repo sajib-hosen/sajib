@@ -143,7 +143,7 @@ export default function Home() {
                       FlyNest Global PLC
                     </h1>
                   </Link>
-                  <p className=" text-sm text-gray-400 italic pr-0 sm:pr-8">
+                  <p className=" text-sm text-gray-200 italic pr-0 sm:pr-8">
                     September 2025 - Current
                   </p>
                 </div>
@@ -164,7 +164,7 @@ export default function Home() {
                   </Link>
                   (SaaS), a ERP system for school/university management. The
                   system supports Fee management, online admission and exam,
-                  online payments,
+                  online payments with Banks and Other payments Gateway,
                 </p>
               </div>
             </div>

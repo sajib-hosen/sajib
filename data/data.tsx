@@ -4,17 +4,17 @@ import { Facebook, Github, Linkedin, Mail } from "lucide-react";
 export const projects_data = [
   {
     name: "Avatown",
-    img_url: PROJECT_IMG.buyport,
+    img_url: PROJECT_IMG.avatown,
     description: "E-Commerce websites for multiple creators",
-    tags: ["Next.js", "Nest.js", "sslcommerz", "Mongo DB"],
-    project_url: "https://clone-of.vercel.app",
+    tags: ["Next.js", "Nest.js", "stripe", "Mongo DB"],
+    project_url: "https://goavatown.com/en",
   },
   {
-    name: "EduFly",
-    img_url: PROJECT_IMG.buyport,
+    name: "EduAyna",
+    img_url: PROJECT_IMG.flynest,
     description: "E-Commerce websites for multiple creators",
     tags: ["Next.js", "Nest.js", "sslcommerz", "Mongo DB"],
-    project_url: "https://clone-of.vercel.app",
+    project_url: "https://flynest.net/",
   },
   {
     name: "Buy Port",
@@ -74,7 +74,7 @@ export const skills_data = [
   },
   {
     title: "Payment Gateway",
-    skills: ["sslcommerz", "stripe"],
+    skills: ["sslcommerz", "stripe", "bKash", "Bank API"],
   },
   {
     title: "Performance Optimization",
@@ -91,6 +91,7 @@ export const skills_data = [
       "CI/CD",
       "Postman",
       "Swagger",
+      "Hostinger",
     ],
   },
   {
