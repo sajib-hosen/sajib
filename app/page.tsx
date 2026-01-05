@@ -73,14 +73,37 @@ export default function Home() {
             <h1 className="text-xl sm:text-2xl text-gray-300 ">
               <span className="text-2xl text-white px-2">&quot;</span>
               I&apos;m a developer at{" "}
-              <Link className=" text-gray-500" href={"https://www.dolami.co/"}>
+              <Link
+                className=" text-gray-500"
+                target="_blank"
+                href={"https://www.dolami.co/"}
+              >
+                FlyNest Global PLC.
+              </Link>
+              , where I work with <span className="underline">Nest.js</span>,{" "}
+              <span className="underline">Next.js</span> and{" "}
+              <span className="underline">leading a team</span> with over{" "}
+              <span className="underline">3 years of experience</span>. I love
+              to create optimized, scalable, and user-friendly applications for
+              users.
+              <span className="text-2xl text-white px-2">&quot;</span>
+            </h1>
+
+            {/* <h1 className="text-xl sm:text-2xl text-gray-300 ">
+              <span className="text-2xl text-white px-2">&quot;</span>
+              I&apos;m a developer at{" "}
+              <Link
+                className=" text-gray-500"
+                target="_blank"
+                href={"https://www.dolami.co/"}
+              >
                 Dolami, Inc.
               </Link>
               , where I work with Next.js and Nest.js. I&apos;m passionate about
               creating optimized, scalable, and user-friendly applications for
               users.
               <span className="text-2xl text-white px-2">&quot;</span>
-            </h1>
+            </h1> */}
 
             <div className=" gap-4 flex flex-wrap items-center">
               {social_links_data.length
@@ -111,41 +134,77 @@ export default function Home() {
           </div>
         }
         right={
-          <div className=" space-y-10 text-gray-300">
-            <div className=" space-y-6">
-              <div className=" flex items-baseline justify-between ">
-                <Link href={"https://www.dolami.co/"}>
-                  <h1 className="text-2xl sm:text-3xl font-bold">
-                    Dolami, Inc
-                  </h1>
-                </Link>
-                <p className=" text-sm text-gray-400 italic pr-0 sm:pr-8">
-                  {/* 16<sup>th</sup> March 2023 - Current */}
-                  March 2023 - Current
+          <div className=" space-y-52 text-gray-300 min-h-full ">
+            <div className=" min-h-screen my-auto flex items-center">
+              <div className=" space-y-6">
+                <div className=" flex items-baseline justify-between ">
+                  <Link target="_blank" href={"https://flynest.net/"}>
+                    <h1 className="text-2xl sm:text-3xl font-bold">
+                      FlyNest Global PLC
+                    </h1>
+                  </Link>
+                  <p className=" text-sm text-gray-200 italic pr-0 sm:pr-8">
+                    September 2025 - Current
+                  </p>
+                </div>
+                <p className="text-lg sm:text-xl">
+                  FlyNest Global PLC is a technology-driven firm based in Dhaka,
+                  Bangladesh, specialising in delivering digital platforms
+                  across sectors such as education, payments/fintech, travel,
+                  and Hajj/Umrah services
+                </p>
+                <p className="text-lg sm:text-xl">
+                  At{" "}
+                  <Link target="_blank" href={"https://www.dolami.co/"}>
+                    FlyNest Global PLC
+                  </Link>
+                  , I&lsquo;m working to the development of{" "}
+                  <Link target="_blank" href={"https://erp.eduflybd.net"}>
+                    EduFly{" "}
+                  </Link>
+                  (SaaS), a ERP system for school/university management. The
+                  system supports Fee management, online admission and exam,
+                  online payments with Banks and Other payments Gateway,
                 </p>
               </div>
-              <p className="text-lg sm:text-xl">
-                <Link href={"https://www.dolami.co/"}>Dolami, Inc</Link>. is a
-                San Francisco-based startup founded in 2022, specializing in
-                virtual reality (VR) technologies. They develop innovative
-                products like the X MASK, a facial tracking device that mirrors
-                real-life expressions onto VR avatars, and{" "}
-                <Link href={"https://goavatown.com/en"}>Avatown</Link>, a
-                platform for buying and selling 3D avatars and fashion items.
-                <Link href={"https://www.dolami.co/"}>Dolami</Link> aims to
-                democratize avatar creation and enhance creative expression in
-                virtual spaces.
-              </p>
-              <p className="text-lg sm:text-xl">
-                At <Link href={"https://www.dolami.co/"}>Dolami</Link>, I
-                contributed to the development of{" "}
-                <Link href={"https://goavatown.com/en"}>Avatown</Link>, a 3D
-                avatar and virtual fashion marketplace. I worked as a Full-Stack
-                Software Engineer, using Next.js, NestJS, and cloud technologies
-                to build scalable and user-friendly features. My work helped
-                improve performance, UX, and backend infrastructure for
-                real-time customization and transactions.
-              </p>
+            </div>
+
+            <div className=" min-h-screen my-auto flex items-center">
+              <div className=" space-y-6">
+                <div className=" flex items-baseline justify-between ">
+                  <Link href={"https://www.dolami.co/"}>
+                    <h1 className="text-2xl sm:text-3xl font-bold">
+                      Dolami, Inc
+                    </h1>
+                  </Link>
+                  <p className=" text-sm text-gray-400 italic pr-0 sm:pr-8">
+                    {/* 16<sup>th</sup> March 2023 - Current */}
+                    March 2023 - August 2025
+                  </p>
+                </div>
+                <p className="text-lg sm:text-xl">
+                  <Link href={"https://www.dolami.co/"}>Dolami, Inc</Link>. is a
+                  San Francisco-based startup founded in 2022, specializing in
+                  virtual reality (VR) technologies. They develop innovative
+                  products like the X MASK, a facial tracking device that
+                  mirrors real-life expressions onto VR avatars, and{" "}
+                  <Link href={"https://goavatown.com/en"}>Avatown</Link>, a
+                  platform for buying and selling 3D avatars and fashion items.
+                  <Link href={"https://www.dolami.co/"}>Dolami</Link> aims to
+                  democratize avatar creation and enhance creative expression in
+                  virtual spaces.
+                </p>
+                <p className="text-lg sm:text-xl">
+                  At <Link href={"https://www.dolami.co/"}>Dolami</Link>, I
+                  contributed to the development of{" "}
+                  <Link href={"https://goavatown.com/en"}>Avatown</Link>, a 3D
+                  avatar and virtual fashion marketplace. I worked as a
+                  Full-Stack Software Engineer, using Next.js, NestJS, and cloud
+                  technologies to build scalable and user-friendly features. My
+                  work helped improve performance, UX, and backend
+                  infrastructure for real-time customization and transactions.
+                </p>
+              </div>
             </div>
           </div>
         }
@@ -175,36 +234,50 @@ export default function Home() {
         }
       />
 
-      <div className="text-gray-300 ">
-        <h1 className="pr-16 text-center text-2xl font-bold ">Performance</h1>
-        <p className=" text-gray-400 text-2xl text-center">&</p>
-        <h1 className="pl-16 text-center mb-10 text-3xl font-bold ">
-          Optimization
-        </h1>
-        <div className=" flex items-center justify-center pb-4 sm:pb-10">
-          <Image
-            src={LIGHTHOUSE}
-            width={600}
-            height={400}
-            alt="lighthouse"
-            className=" rounded"
-          />
-        </div>
-        <p className=" text-center mx-auto sm:max-w-2/3 mb-8 sm:mb-0 pb-4 sm:pb-16">
-          This Lighthouse audit demonstrates a web application I developed that
-          achieved perfect scores in all major categories: Performance,
-          Accessibility, Best Practices, and SEO. The result highlights my
-          ability to build fast, user-friendly, and technically sound
-          applications using modern frameworks and best development practices.
-          The application was built using Next.js, React, and Tailwind CSS, with
-          a strong focus on speed, accessibility, and overall user experience.
-        </p>
-      </div>
+      <EachBlok
+        left={
+          <div className=" space-y-4">
+            <h1 className="text-xl sm:text-4xl  ">
+              Performance{" "}
+              <span className=" text-6xl font-bold text-gray-700">&</span>
+            </h1>
+
+            <h1 className="text-xl sm:text-4xl font-bold pl-18">
+              Optimization
+            </h1>
+          </div>
+        }
+        right={
+          <>
+            <div className=" space-y-6">
+              <div className=" flex items-center pb-4 sm:pb-10">
+                <Image
+                  src={LIGHTHOUSE}
+                  width={600}
+                  height={400}
+                  alt="lighthouse"
+                  className=" rounded"
+                />
+              </div>
+              <p className=" mb-8 sm:mb-0 pb-4 sm:pb-16">
+                This Lighthouse audit demonstrates a web application I developed
+                that achieved perfect scores in all major categories:
+                Performance, Accessibility, Best Practices, and SEO. The result
+                highlights my ability to build fast, user-friendly, and
+                technically sound applications using modern frameworks and best
+                development practices. The application was built using Next.js,
+                React, and Tailwind CSS, with a strong focus on speed,
+                accessibility, and overall user experience.
+              </p>
+            </div>
+          </>
+        }
+      />
 
       <EachBlok
         left={
           <div className=" space-y-4">
-            <h1 className="text-xl sm:text-2xl text-gray-400 ">My</h1>
+            <h1 className="text-xl sm:text-2xl text-gray-400 ">Reference</h1>
             <p className="text-5xl sm:text-6xl font-bold">Projects</p>
           </div>
         }
@@ -249,7 +322,7 @@ export default function Home() {
       <div className=" flex justify-center ">
         <div className=" flex gap-4 text-gray-500">
           {social_links_data.map((e) => (
-            <Link key={e.short_url} href={e.link}>
+            <Link target="_blank" key={e.short_url} href={e.link}>
               {e.title}
             </Link>
           ))}
