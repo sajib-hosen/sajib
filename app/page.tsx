@@ -76,7 +76,7 @@ export default function Home() {
               <Link
                 className=" text-gray-500"
                 target="_blank"
-                href={"https://www.dolami.co/"}
+                href={"https://flynest.net/"}
               >
                 FlyNest Global PLC.
               </Link>
@@ -260,14 +260,10 @@ export default function Home() {
                 />
               </div>
               <p className=" mb-8 sm:mb-0 pb-4 sm:pb-16">
-                This Lighthouse audit demonstrates a web application I developed
-                that achieved perfect scores in all major categories:
-                Performance, Accessibility, Best Practices, and SEO. The result
-                highlights my ability to build fast, user-friendly, and
-                technically sound applications using modern frameworks and best
-                development practices. The application was built using Next.js,
-                React, and Tailwind CSS, with a strong focus on speed,
-                accessibility, and overall user experience.
+                I have experience optimizing reactjs and nextjs application.
+              </p>
+              <p className=" mb-8 sm:mb-0 pb-4 sm:pb-16">
+                I also have experience in optimized design api for backend
               </p>
             </div>
           </>
