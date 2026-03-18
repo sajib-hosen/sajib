@@ -1,59 +1,18 @@
+import { DisplaySkill, EachBlok, Tag } from "@/components/shared/each-block";
 import TimeStamp from "@/components/shared/time-stamp";
-import { LIGHTHOUSE, MY_NAME, PROFESSION } from "@/constent";
+import {
+  BANKS,
+  LIGHTHOUSE,
+  MY_NAME,
+  PAYMENT_GATEWAY,
+  PROFESSION,
+} from "@/constent";
 import { projects_data, skills_data, social_links_data } from "@/data/data";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-
-const DisplaySkill = ({
-  title,
-  skills,
-}: {
-  title: string;
-  skills: string[];
-}) => {
-  return (
-    <div className=" space-y-3">
-      <h1 className=" font-bold flex items-center">
-        <ArrowRight size={20} className=" mr-2" />
-        <span className=" text-lg">{title}</span>
-      </h1>
-      <div className=" ml-4 space-x-2 ">
-        {skills.length ? skills.map((e, i) => <Tag key={i} label={e} />) : null}
-      </div>
-    </div>
-  );
-};
-
-// this display tags
-const Tag = ({ label }: { label: string }) => {
-  return <button className=" text-sm bg-gray-900 px-2 rounded">{label}</button>;
-};
-
-const EachBlok = ({
-  left,
-  right,
-}: {
-  left: React.ReactNode;
-  right: React.ReactNode;
-}) => {
-  return (
-    <div className=" flex flex-col sm:flex-row  pb-4 sm:pb-16 ">
-      <div className="w-full sm:w-1/2">
-        <div className="sticky top-[83px] flex justify-center items-center min-h-[150px] sm:min-h-[calc(100vh-200px)]">
-          {left}
-        </div>
-      </div>
-
-      <div className="w-full sm:w-1/2 min-h-96 sm:min-h-screen flex items-center ">
-        <div className="space-y-4 sm:space-y-16 pr-4 text-gray-300">
-          {right}
-        </div>
-      </div>
-    </div>
-  );
-};
+import { getWorkExperience } from "./utils/get-work-experiance";
 
 export default function Home() {
   return (
@@ -70,40 +29,31 @@ export default function Home() {
         }
         right={
           <>
-            <h1 className="text-xl sm:text-2xl text-gray-300 ">
+            <h1 className="text-xl sm:text-2xl text-gray-300">
               <span className="text-2xl text-white px-2">&quot;</span>
-              I&apos;m a developer at{" "}
+              I’m a developer currently working at{" "}
               <Link
-                className=" text-gray-500"
+                className="text-gray-400"
                 target="_blank"
                 href={"https://flynest.net/"}
               >
-                FlyNest Global PLC.
+                FlyNest Global PLC
               </Link>
-              , where I work with <span className="underline">Nest.js</span>,{" "}
-              <span className="underline">Next.js</span> and{" "}
-              <span className="underline">leading a team</span> with over{" "}
-              <span className="underline">3 years of experience</span>. I love
-              to create optimized, scalable, and user-friendly applications for
-              users.
-              <span className="text-2xl text-white px-2">&quot;</span>
-            </h1>
-
-            {/* <h1 className="text-xl sm:text-2xl text-gray-300 ">
-              <span className="text-2xl text-white px-2">&quot;</span>
-              I&apos;m a developer at{" "}
+              . Previously, I worked at{" "}
               <Link
-                className=" text-gray-500"
+                className="text-gray-400"
                 target="_blank"
                 href={"https://www.dolami.co/"}
               >
                 Dolami, Inc.
-              </Link>
-              , where I work with Next.js and Nest.js. I&apos;m passionate about
-              creating optimized, scalable, and user-friendly applications for
-              users.
+              </Link>{" "}
+              (San Francisco, CA, USA). I have{" "}
+              <span className="text-gray-400 underline">
+                {getWorkExperience("2023-03-01")} of professional experience
+              </span>{" "}
+              building scalable applications using NestJS, Next.js and Flutter.
               <span className="text-2xl text-white px-2">&quot;</span>
-            </h1> */}
+            </h1>
 
             <div className=" gap-4 flex flex-wrap items-center">
               {social_links_data.length
@@ -155,7 +105,7 @@ export default function Home() {
                 </p>
                 <p className="text-lg sm:text-xl">
                   At{" "}
-                  <Link target="_blank" href={"https://www.dolami.co/"}>
+                  <Link target="_blank" href={"https://www.dolami.co"}>
                     FlyNest Global PLC
                   </Link>
                   , I&lsquo;m working to the development of{" "}
@@ -164,7 +114,18 @@ export default function Home() {
                   </Link>
                   (SaaS), a ERP system for school/university management. The
                   system supports Fee management, online admission and exam,
-                  online payments with Banks and Other payments Gateway,
+                  online payments with{" "}
+                  <span className="underline" title={BANKS.join(", ")}>
+                    Banks ({BANKS.length})
+                  </span>{" "}
+                  and Other{" "}
+                  <span
+                    className="underline"
+                    title={PAYMENT_GATEWAY.join(", ")}
+                  >
+                    payments Gateway ({PAYMENT_GATEWAY.length})
+                  </span>
+                  ,
                 </p>
               </div>
             </div>
@@ -249,21 +210,33 @@ export default function Home() {
         }
         right={
           <>
-            <div className=" space-y-6">
-              <div className=" flex items-center pb-4 sm:pb-10">
+            <div className="space-y-6">
+              <div className="flex items-center pb-4 sm:pb-10">
                 <Image
                   src={LIGHTHOUSE}
                   width={600}
                   height={400}
                   alt="lighthouse"
-                  className=" rounded"
+                  className="rounded"
                 />
               </div>
-              <p className=" mb-8 sm:mb-0 pb-4 sm:pb-16">
-                I have experience optimizing reactjs and nextjs application.
+
+              <p className="mb-8 sm:mb-0 pb-4 sm:pb-16">
+                I focus on frontend performance optimization using Next.js and
+                React.js. I improve application speed and user experience
+                through techniques such as code splitting, lazy loading,
+                memoization, and efficient state management. I also optimize
+                rendering behavior and leverage server-side rendering (SSR) and
+                static generation (SSG) to ensure fast load times and better
+                SEO.
               </p>
-              <p className=" mb-8 sm:mb-0 pb-4 sm:pb-16">
-                I also have experience in optimized design api for backend
+
+              <p className="mb-8 sm:mb-0 pb-4 sm:pb-16">
+                On the backend, I design and optimize APIs for performance,
+                scalability, and security. I work with efficient query
+                strategies, indexing, and caching to reduce response time. I
+                also implement best practices for authentication, authorization,
+                and data validation to ensure secure and reliable systems.
               </p>
             </div>
           </>

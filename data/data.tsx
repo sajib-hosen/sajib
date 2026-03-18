@@ -1,4 +1,4 @@
-import { PROJECT_IMG } from "@/constent";
+import { BANKS, PAYMENT_GATEWAY, PROJECT_IMG } from "@/constent";
 import { Facebook, Github, Linkedin, Mail } from "lucide-react";
 
 export const projects_data = [
@@ -66,6 +66,7 @@ export const skills_data = [
       "Node.js",
       "Express",
       "Tailwindcss",
+      "Flutter",
     ],
   },
   {
@@ -74,11 +75,11 @@ export const skills_data = [
   },
   {
     title: "Payment Gateway",
-    skills: ["sslcommerz", "stripe", "bKash", "Bank API"],
+    skills: ["sslcommerz", "stripe", ...PAYMENT_GATEWAY, ...BANKS],
   },
   {
     title: "Performance Optimization",
-    skills: ["Lighthouse", "bundle-analyzer"],
+    skills: ["Lighthouse", "bundle-analyzer", "API Optimization"],
   },
   {
     title: "DevOps & Tools",
