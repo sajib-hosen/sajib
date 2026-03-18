@@ -1,5 +1,3 @@
-// export const SAJIB_ICON = "/images/sajib.png";
-// sajib21.jpg
 export const SAJIB_ICON = "/images/sajib21.jpg";
 
 export const PROJECT_IMG = {
@@ -17,3 +15,11 @@ export const LIGHTHOUSE = "/images/lighthouse3.png";
 export const MY_NAME = "Sajib Hosen";
 
 export const PROFESSION = "Developer";
+
+export const BANKS = [
+  "Islami Bank Bangladesh PLC",
+  "Shonali Bank PLC",
+  "Janata Bank PLC",
+  "City Bank PLC",
+];
+export const PAYMENT_GATEWAY = ["bkash", "I-Pay"];

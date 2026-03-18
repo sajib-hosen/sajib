@@ -1,7 +1,14 @@
-import { PROJECT_IMG } from "@/constent";
+import { BANKS, PAYMENT_GATEWAY, PROJECT_IMG } from "@/constent";
 import { Facebook, Github, Linkedin, Mail } from "lucide-react";
 
 export const projects_data = [
+  {
+    name: "EduAyna",
+    img_url: PROJECT_IMG.eduayna,
+    description: "Education management system (SaaS)",
+    tags: ["Next.js", "Nest.js", "Postgres", "Drizzle-ORM", "Bank API"],
+    project_url: "https://flynest.net/",
+  },
   {
     name: "Avatown",
     img_url: PROJECT_IMG.avatown,
@@ -9,13 +16,7 @@ export const projects_data = [
     tags: ["Next.js", "Nest.js", "stripe", "Mongo DB"],
     project_url: "https://goavatown.com/en",
   },
-  {
-    name: "EduAyna",
-    img_url: PROJECT_IMG.eduayna,
-    description: "Education management system (SaaS)",
-    tags: ["Next.js", "Nest.js", "sslcommerz", "Mongo DB"],
-    project_url: "https://flynest.net/",
-  },
+
   {
     name: "Buy Port",
     img_url: PROJECT_IMG.buyport,
@@ -31,27 +32,6 @@ export const projects_data = [
     tags: ["Next.js", "Three.js", "React.js", "Tailwindcss"],
     project_url: "https://soler-system-pzeh.vercel.app/",
   },
-  // {
-  //   name: "BCS Joyjatra",
-  //   img_url: PROJECT_IMG.first,
-  //   description: "BCS Joyjatra is a online learning platform",
-  //   tags: ["React.js", "express.js", "Mongo DB", "firebase"],
-  //   project_url: "https://illustrious-semolina-241bb3.netlify.app/",
-  // },
-  // {
-  //   name: "Wholesale Point",
-  //   img_url: PROJECT_IMG.secant,
-  //   description: "Store management web application",
-  //   tags: ["React.js", "express.js", "Mongo DB", "firebase"],
-  //   project_url: "https://coruscating-faun-e0a53f.netlify.app/",
-  // },
-  // {
-  //   name: "Adverlo",
-  //   img_url: PROJECT_IMG.third,
-  //   description: "This is a demo business website",
-  //   tags: ["React.js", "gsap"],
-  //   project_url: "https://neon-tanuki-376c60.netlify.app/",
-  // },
 ];
 
 export const skills_data = [
@@ -66,6 +46,7 @@ export const skills_data = [
       "Node.js",
       "Express",
       "Tailwindcss",
+      "Flutter",
     ],
   },
   {
@@ -74,11 +55,11 @@ export const skills_data = [
   },
   {
     title: "Payment Gateway",
-    skills: ["sslcommerz", "stripe", "bKash", "Bank API"],
+    skills: ["sslcommerz", "stripe", ...PAYMENT_GATEWAY, ...BANKS],
   },
   {
     title: "Performance Optimization",
-    skills: ["Lighthouse", "bundle-analyzer"],
+    skills: ["Lighthouse", "bundle-analyzer", "API Optimization"],
   },
   {
     title: "DevOps & Tools",
