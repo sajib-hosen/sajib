@@ -8,10 +8,8 @@ import {
   PROFESSION,
 } from "@/constent";
 import { projects_data, skills_data, social_links_data } from "@/data/data";
-import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
 import { getWorkExperience } from "./utils/get-work-experiance";
 
 export default function Home() {
